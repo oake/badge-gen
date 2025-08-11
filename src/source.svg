@@ -150,6 +150,34 @@
       <path id="poly-quad" d="m0 0h11l11 10-22 21z" fill="#fff"/>
       <path id="poly-heart" d="m8.8724 5.409c-1.2122 1.2122-1.2122 3.1785 0 4.3907l0.19384 0.19383s-0.20652 0.20659-0.20652 0.20659c-1.2122 1.2122-1.2122 3.1785 0 4.3907 1.2122 1.2122 3.1785 1.2122 4.3907 0l0.20652-0.20659 4.3907-4.3907 0.04008-0.04004-4.4191-4.3395-0.01166-0.011-0.19384-0.19383c-1.2122-1.2122-3.1785-1.2122-4.3907 0z" fill="#fcbf00"/>
     </g>
+    <g id="progress">
+      <path id="path1" fill="#770088" stroke="none" d="M 0 0 L 88 0 L 88 31 L 0 31 Z"/>
+      <path id="path2" fill="#004cff" stroke="none" d="M 0 0 L 88 0 L 88 25 L 0 25 Z"/>
+      <path id="path3" fill="#028121" stroke="none" d="M 0 0 L 88 0 L 88 20 L 0 20 Z"/>
+      <path id="path4" fill="#ffee00" stroke="none" d="M 0 0 L 88 0 L 88 15 L 0 15 Z"/>
+      <path id="path5" fill="#ff8d00" stroke="none" d="M 0 0 L 88 0 L 88 10 L 0 10 Z"/>
+      <path id="path6" fill="#e50000" stroke="none" d="M 0 0 L 88 0 L 88 5 L 0 5 Z"/>
+      <path id="chevron-5" fill="#000000" fill-rule="evenodd" stroke="none" d="M 0 31 L 0 0 L 8 0 L 24 15.5 L 8 31 L 0 31 Z"/>
+      <path id="chevron-4" fill="#613917" fill-rule="evenodd" stroke="none" d="M 0 31 L 0 0 L 4 0 L 20 15.5 L 4 31 L 0 31 Z"/>
+      <path id="chevron-3" fill="#7dc1e9" fill-rule="evenodd" stroke="none" d="M 0 2e-06 L 16 15.5 L 0 31 L 0 2e-06 Z"/>
+      <path id="chevron-2" fill="#f398c0" fill-rule="evenodd" stroke="none" d="M 0 4.000002 L 12 15.5 L 0 27 L 0 4.000002 Z"/>
+      <path id="chevron-1" fill="#ffffff" fill-rule="evenodd" stroke="none" d="M 0 8.000004 L 8 15.5 L 0 23 L 0 8.000004 Z"/>
+    </g>
+    <g id="global-inclusive">
+      <path id="path7" fill="#770088" stroke="none" d="M 0 0 L 88 0 L 88 31 L 0 31 Z"/>
+      <path id="path8" fill="#004cff" stroke="none" d="M 0 0 L 88 0 L 88 25 L 0 25 Z"/>
+      <path id="path9" fill="#028121" stroke="none" d="M 0 0 L 88 0 L 88 20 L 0 20 Z"/>
+      <path id="path10" fill="#ffee00" stroke="none" d="M 0 0 L 88 0 L 88 15 L 0 15 Z"/>
+      <path id="path11" fill="#ff8d00" stroke="none" d="M 0 0 L 88 0 L 88 10 L 0 10 Z"/>
+      <path id="path12" fill="#e50000" stroke="none" d="M 0 0 L 88 0 L 88 5 L 0 5 Z"/>
+      <path id="chevron-6" fill="#1c1718" fill-rule="evenodd" stroke="none" d="M 5 31 L 5 0 L 13 0 L 29 15.5 L 13 31 L 5 31 Z"/>
+      <path id="path13" fill="#7e4013" fill-rule="evenodd" stroke="none" d="M 6 31 L 6 0 L 10 0 L 26 15.5 L 10 31 L 6 31 Z"/>
+      <path id="path14" fill="#5ac8e9" fill-rule="evenodd" stroke="none" d="M 3 31 L 3 0 L 7 0 L 23 15.5 L 7 31 L 3 31 Z"/>
+      <path id="path15" fill="#f3b2cb" fill-rule="evenodd" stroke="none" d="M 0 31 L 0 0 L 3.897436 0 L 19 15.5 L 3.897437 31 L 0 31 Z"/>
+      <path id="path16" fill="#ffffff" fill-rule="evenodd" stroke="none" d="M 0 31 L 0 0 L 0.499993 0 L 16 15.499998 L 0.499998 31 L 0 31 Z"/>
+      <path id="path17" fill="#ffce00" fill-rule="evenodd" stroke="none" d="M 0 3.000006 L 13 15.499997 L 0 28 L 0 3.000006 Z"/>
+      <path id="circle" fill="none" stroke="#50008e" stroke-linecap="round" stroke-linejoin="round" d="M 8 15.5 C 8 13.567003 6.432997 12 4.5 12 C 2.567003 12 1 13.567003 1 15.5 C 1 17.432997 2.567003 19 4.5 19 C 6.432997 19 8 17.432997 8 15.5 Z"/>
+    </g>
   </g>
   <g id="clips" display="none">
     <rect id="half" width="44" height="31"/>
