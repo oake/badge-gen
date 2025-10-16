@@ -1,12 +1,10 @@
-import fs from 'fs';
-
-import { initialize, svg2png } from 'svg2png-wasm';
-import { serveStatic } from 'hono/bun';
-await initialize(fs.readFileSync('./node_modules/svg2png-wasm/svg2png_wasm_bg.wasm'));
+import { Resvg, initWasm } from '@resvg/resvg-wasm';
+import wasm from '@resvg/resvg-wasm/index_bg.wasm';
+initWasm(wasm).catch(() => {});
 
 import { parseSourceSvg, buildBadgeSvg } from './svg.js';
 
-let sourceSvg = fs.readFileSync('src/source.svg', 'utf8');
+import sourceSvg from './source.svg';
 const { template, flags, clips, overlays } = parseSourceSvg(sourceSvg);
 
 import { Hono } from 'hono';
@@ -55,7 +53,9 @@ async function renderBadge(c) {
 	if (params.type === 'svg') {
 		return c.body(svg, 200, { 'content-type': 'image/svg+xml' });
 	}
-	const buf = await svg2png(svg, {});
+	const resvg = new Resvg(svg, {});
+	const pngData = resvg.render();
+	const buf = pngData.asPng();
 	return c.body(buf, 200, { 'content-type': 'image/png' });
 }
 
@@ -68,8 +68,6 @@ app.get('/options.json', (c) => {
 		overlays: Object.keys(overlays),
 	});
 });
-
-app.use('/*', serveStatic({ root: './frontend' }));
 
 console.log('Serving...');
 

@@ -1,0 +1,16 @@
+name = "badge-gen"
+main = "src/index.js"
+compatibility_date = "2025-09-15"
+compatibility_flags = ["nodejs_compat"]
+
+[[routes]]
+pattern = "badge.les.bi"
+custom_domain = true
+
+[assets]
+directory = "./frontend"
+
+[[rules]]
+type = "Text"
+globs = ["*.svg"]
+fallthrough = true
